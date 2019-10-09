@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>課題４｜スマホのドロワーメニュー</title>
+	<meta name="description" content="スマホのドロワーメニューの実装">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+</head>
+  <body>
+<!-- header ここから -->
+    <header>
+      <div class="header-1">
+        <div class="header1-left">
+        <div class="menubar">
+        </div>
+        <h1 id="logo">Amazon.co.jp</h1>
+        <p id="search">
+          <input type="text" name="" value="けんさく">
+          検索
+        </p>
+      </div>
+        <nav class="header1-right">
+          <ul>
+            <li class="js-modal-open">ログイン
+							<div class="modal js-modal">
+								<div class="modal-content">
+									<p>ログイン画面</p>
+									<form class="" action="index.html" method="post">
+										<input type="text" name="" placeholder="ユーザーネーム">
+										<input type="password" name="" placeholder="パスワード">
+										<button type="button" name="button" class="js-modal-close">ログイン</button>
+										<div class="js-modal-close">
+											<i class="fa fa-2x fa-times"></i>
+										</div>
+									</form>
+								</div>
+							</div>
+						</li>
+            <li>注文履歴</li>
+            <li>プライム</li>
+            <li class="js-modal-open2">カート
+							<div class="modal js-modal2">
+								<div class="modal-content">
+									<p>カートの中身は空です。</p>
+									<button type="button" name="button" class="js-modal-close">閉じる</button></a>
+						      <div class="js-modal-close">
+						        <i class="fa fa-2x fa-times"></i>
+						      </div>
+								</div>
+							</div>
+							</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-2">
+        <div class="header2-left">
+          <p id="address">お届け先</p>
+          <nav>
+            <ul>
+              <li><a href="#">ホーム</a></li>
+              <li><a href="#">マイストア</a></li>
+              <li><a href="#">タイムセール</a></li>
+              <li><a href="#">ギフト券</a></li>
+              <li><a href="#">Amazonで売る</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header2-right">
+          <p>会員特典</p>
+        </div>
+      </div>
+    </header>
+<!-- ドロワーメニューここから -->
+		<div id="nav-toggle" class="">
+			<div class="">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="gloval-nav">
+			<div class="js-modal-close">
+				<i class="fa fa-2x fa-times"></i>
+			</div>
+		<nav>
+			<ul>
+				<li class="js-modal-open">ログイン
+					<div class="modal js-modal">
+						<div class="modal-content">
+							<p>ログイン画面</p>
+							<form class="" action="index.html" method="post">
+								<input type="text" name="" placeholder="ユーザーネーム">
+								<input type="password" name="" placeholder="パスワード">
+								<button type="button" name="button" class="js-modal-close">ログイン</button>
+								<div class="js-modal-close">
+									<i class="fa fa-2x fa-times"></i>
+								</div>
+							</form>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">注文履歴</a></li>
+				<li><a href="#">プライム</a></li>
+				<li class="js-modal-open2">カート
+					<div class="modal js-modal2">
+						<div class="modal-content">
+							<p>カートの中身は空です。</p>
+							<button type="button" name="button" class="js-modal-close">閉じる</button></a>
+							<div class="js-modal-close">
+								<i class="fa fa-2x fa-times"></i>
+							</div>
+						</div>
+					</div>
+					</li>
+			</ul>
+		</div>
+		</nav>
+
+<!-- ドロワーメニューここまで -->
+<!-- トップ画像　ここから -->
+    <div id="top-image">
+      <div id="contents">
+        <div class="content js-hover-show" id="content1">
+          <p class="content-title">コンテンツ１</p>
+          <div class="content-img">
+            <img src="img/skill_1.jpg" alt="コンテンツ１">
+            <p class="text-content">hover addClassの練習コンテンツ１コンテンツ１コンテンツ１コンテンツ１</p>
+          </div>
+        </div>
+        <div class="content js-hover-show" id="content2">
+          <p class="content-title">コンテンツ２</p>
+          <div class="content-img">
+            <img src="img/skill_2.jpg" alt="コンテンツ１">
+            <p class="text-content">hover addClassコンテンツ２コンテンツ２コンテンツ２コンテンツ２</p>
+          </div>
+        </div>
+        <div class="content js-hover-show" id="content3">
+          <p class="content-title">コンテンツ３</p>
+          <div class="content-img">
+            <img src="img/skill_3.jpg" alt="コンテンツ１">
+            <p class="text-content">hover addClassコンテンツ３コンテンツ３コンテンツ３コンテンツ３</p>
+          </div>
+        </div>
+      </div>
+		</div> <!-- top-image閉じ -->
+<!--Q and A ここから -->
+		<div class="qanda">
+			<p class="practice-title">Q and A　モーダルウィンドウ練習</p>
+			<ul class="slidelist">
+				<li>
+					<dl class="faq-list-item">
+						<dt class="question">質問１</dt>
+						<span class="">+</span>
+						<dd class="answer ">答え１答え１答え１答え１答え１</dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="faq-list-item">
+						<dt class="question js-ac-open">質問２</dt>
+						<span class="">+</span>
+						<dd class="answer  ">答え２答え２答え２答え２</dd>
+					</dl>
+				</li>
+				<li>
+					<dl class="faq-list-item">
+						<dt class="question js-ac-open">質問３</dt>
+						<span class="">+</span>
+						<dd class="answer  ">答え３答え３答え３答え３答え３答え３</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+
+<!-- Q and A ここまで　-->
+<!-- スライダーの実装練習 -->
+	<p class="practice-title">スライダーの実装</p>
+	<div class="img-wrapper">
+		<p class="prev-btn"><</p>
+		<ul>
+			<li class="slide-image active">
+				<img  src="img/skill_1.jpg" alt="画像１">
+			</li>
+			<li class="slide-image ">
+				<img  src="img/skill_2.jpg" alt="画像２">
+			</li>
+			<li class="slide-image ">
+				<img  src="img/skill_3.jpg" alt="画像３">
+			</li>
+			<li class="slide-image ">
+				<img  src="img/skill_4.jpg" alt="画像４">
+			</li>
+		</ul>
+		<p class="next-btn">></p>
+	</div>
+<!-- footer　ここから -->
+    <footer>
+      copyright:amazon.com
+    </footer>
+
+
+  <script>
+	// ログインのモーダルウィンドウ
+	$(function(){
+		$('.js-modal-open').on('click',function(){
+			$('.js-modal').fadeIn();
+			return false;
+		});
+		$('.js-modal-close').on('click',function(){
+			$('.js-modal').fadeOut();
+			return false;
+		});
+	});
+
+	// カートのモーダルウィンドウ
+	$(function(){
+		$('.js-modal-open2').on('click',function(){
+			$('.js-modal2').fadeIn();
+			return false;
+		});
+		$('.js-modal-close').on('click',function(){
+			$('.js-modal2').fadeOut();
+			return false;
+		});
+	});
+
+	// コンテンツテキストのホバー
+	$(function(){
+		$('.js-hover-show').hover(
+			function(){
+				$(this).find('.text-content').addClass('text-active');
+				// $(this).css('color','red');
+			},
+			function(){
+				$(this).find('.text-content').removeClass('text-active');
+			});
+		});
+
+// アコーディオンの開閉
+$(function(){
+	$('.faq-list-item').click(function(){
+		var $answer = $(this).find('.answer');
+		if($answer.hasClass('open')){
+			$answer.removeClass('open');
+			$answer.slideUp();
+			$(this).find('span').text('+');
+		}else{
+			$answer.addClass('open');
+			$answer.slideDown();
+			$(this).find('span').text('-');
+		}
+	});
+});
+
+//スライダーの練習
+ $(function(){
+	 $('.next-btn').click(function(){
+		 var $nextslide = $('.active');
+		 $nextslide.removeClass('active');
+		 $nextslide.next().addClass('active');
+			 var slideIndex = $('.slide-image').index($('.active'));
+			 // function toggleChangeBtn(){
+				 if(slideIndex == 0){
+					 $('.prev-btn').hide();
+					 $('.next-btn').show();
+				 }else if(slideIndex == $('.slide-image').length-1){
+					 $('.next-btn').hide();
+					 $('.prev-btn').show();
+				 }else{
+					 $('.prev-btn').show();
+					 $('.next-btn').show();
+				 }
+			 });
+	 $('.prev-btn').click(function(){
+		 var $prevslide = $('.active');
+		 $prevslide.removeClass('active');
+		 $prevslide.prev().addClass('active');
+		 var slideIndex = $('.slide-image').index($('.active'));
+		 	// toggleChangeBtn();
+		 if(slideIndex == 0){
+			 $('.prev-btn').hide();
+			 $('.next-btn').show();
+		 }else if(slideIndex == $('.slide-image').length-1){
+			 $('.next-btn').hide();
+			 $('.prev-btn').show();
+		 }else{
+			 $('.prev-btn').show();
+			 $('.next-btn').show();
+		 }
+		});
+	 });
+//ドロワーメニュー
+ 	$(function(){
+		$('#nav-toggle').click(function(){
+			$('.gloval-nav').toggleClass('open');
+			$('#nav-toggle').hide();
+		});
+		$('.js-modal-close').on('click',function(){
+			$('.gloval-nav').removeClass('open');
+			$('#nav-toggle').show(1000);
+		});
+	});
+
+  </script>
+  </body>
+</html>

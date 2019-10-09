@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	
 
 </head>
   <body>
@@ -195,6 +196,19 @@
 		</ul>
 		<p class="next-btn">></p>
 	</div>
+<!-- スライダーの実装練習２ -->
+	<p class="practice-title">スライダーの実装２自動再生とか</p>
+	<div class="img-wrapper">
+		<p class="prev-btn2"><</p>
+			<div class="bxslider">
+				<img  src="img/skill_1.jpg" alt="画像１">
+				<img  src="img/skill_2.jpg" alt="画像２">
+				<img  src="img/skill_3.jpg" alt="画像３">
+				<img  src="img/skill_4.jpg" alt="画像４">
+			</div>
+		<p class="next-btn2">></p>
+	</div>
+
 <!-- footer　ここから -->
     <footer>
       copyright:amazon.com
@@ -291,6 +305,16 @@ $(function(){
 		 }
 		});
 	 });
+// スライダーの練習２
+$('.bxslider').bxSlider({
+	auto:true,
+	autoControls:true,
+	stopAutoOnClick:terue,
+	pager:true,
+	slideWidth:600
+});
+
+
 //ドロワーメニュー
  	$(function(){
 		$('#nav-toggle').click(function(){
@@ -302,6 +326,8 @@ $(function(){
 			$('#nav-toggle').show(1000);
 		});
 	});
+
+
 
   </script>
   </body>
